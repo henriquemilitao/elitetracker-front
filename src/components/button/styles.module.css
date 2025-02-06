@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--info);
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--white);
+  transition: background-color 200ms;
+
+    
+}
+.container img {
+  height: 25px;
+  filter: brightness(0) invert(1);
+  margin-top: -2px;
+}
+
+.container:hover {
+  background-color: var(--info-hover);
+}
+
+.error {
+  background-color: var(--error);
+}
+
+.error:hover {
+  background-color: var(--error-hover);
+}
+
+.disabled {
+  background-color: var(--neutral);
+  cursor: not-allowed
+}
+
+.disabled:hover {
+  background-color: var(--neutral);
+
+}

@@ -1,0 +1,50 @@
+{
+  "name": "elitetracker-front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.15.1",
+    "@mantine/dates": "^7.15.1",
+    "@mantine/hooks": "^7.15.1",
+    "@phosphor-icons/react": "^2.1.7",
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "localforage": "^1.10.0",
+    "match-sorter": "^8.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2",
+    "react-timer-hook": "^3.0.8",
+    "sort-by": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import-helpers": "^2.0.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.12.0",
+    "postcss": "^8.4.49",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.4.2",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1"
+  }
+}

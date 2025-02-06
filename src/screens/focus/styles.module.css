@@ -1,0 +1,148 @@
+.container {
+	height: 100%;
+	background-color: var(--dark-blue);
+	min-height: 100vh;
+	width: 100%;
+  display: grid;
+  grid-template-columns: 55% 1fr;
+}
+
+.content{
+	padding: 20px;
+	border-right: 1px solid var(--light);
+	min-height: calc(100vh - 40px); /* HACK */
+}
+
+.input-group {
+	display: flex;	
+  max-width: 400px;
+  margin: 0 auto;
+	/* justify-content: center; */
+	gap: 20px;
+}
+
+.input {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--white);
+	border-radius: 4px;
+	height: 36px;
+	padding: 0 7px 0 10px;
+	margin-top: 40px;
+}
+
+.input input {
+  height: 36px;
+  width: 100%;
+  /* max-width: 140px; */
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--white);
+  padding: 0 5px;
+  text-align: center;
+}
+
+.input input::placeholder {
+  color: var(--light);
+}
+
+.input svg {
+  height: 24px;
+  width: 24px;
+  fill: var(--white);
+  cursor: pointer;
+  transition: fill 100ms;
+}
+
+.input svg:hover {
+  fill: var(--info)
+}
+
+.timer {
+  border: 3px solid var(--white);
+  height: 364px;
+  width: 100%;
+  max-width: 364px;
+  margin: 80px auto 0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.timer strong {
+  color: var(--white);
+}
+
+.timer span {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--white)
+}
+
+.button-group {
+  width: 100%;
+  max-width: 180px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto 0;
+  gap: 20px;
+}
+
+.metrics {
+  padding: 20px;
+}
+
+.metrics h2 {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--white);
+  margin-top: 20px;
+
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 80px;
+  border-bottom: 1px solid var(--light);
+}
+
+.calendar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+.focus-time-day h3{
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.focus-time-info {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.focus-time-info div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.focus-time-info div svg{
+  fill: var(--info)
+
+}

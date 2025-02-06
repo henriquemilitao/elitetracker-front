@@ -1,0 +1,59 @@
+:root {  
+  --info: #016bf8;
+  --info-hover: #00357b;
+  --warning: #ffc010;
+  --error: #db3030;
+  --error-hover: #9d1919;
+  
+  --white: #ffffff;
+  --light: #828282;
+  --neutral: #575757;
+  --dark-light-blue: #003045;
+  --black-blue: #04141c;
+  --dark-blue: #001e2b;
+}
+
+* {
+  margin: 0;
+  outline: 0;
+  /* box-sizing: border-box; */
+  padding: 0;
+  font-family: 'Lexend', sans-serif;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* @media (hover: hover) {
+    [data-mantine-color-scheme='dark'] .m_f6645d97:hover:where(:not([data-disabled], :disabled)), 
+    [data-mantine-color-scheme='dark'] .m_2351eeb0:hover:where(:not([data-disabled], :disabled)) {
+        background-color: var(--mantine-color-dark-5);
+    } */
+
+@media (hover: hover) {
+  [data-mantine-color-scheme='dark'] .m_f6645d97:hover:where(:not([data-disabled], :disabled)), 
+  [data-mantine-color-scheme='dark'] .m_2351eeb0:hover:where(:not([data-disabled], :disabled)) {
+    background-color: var(--dark-light-blue) !important  ; /* Cor desejada */
+  }
+}
+
+@media (hover: hover) {
+  [data-mantine-color-scheme='dark'] .m_396ce5cb:hover:where(:not([data-static], [data-disabled], [data-selected], [data-in-range])) {
+      background-color: var(--dark-light-blue) !important  ; /* Cor desejada */
+
+  }
+}
+
+@media (hover: hover) {
+  :where([data-mantine-color-scheme='dark']) .m_dc6a3c71:hover:where(:not([data-disabled], :disabled)) {
+      background-color: var(--dark-light-blue) !important  ; /* Cor desejada */
+
+  }
+}
+
+.m_396ce5cb:where([data-selected]) {
+  background-color: var(--dark-light-blue) !important; 
+  color: var(--white) !important; 
+}

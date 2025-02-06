@@ -1,0 +1,19 @@
+.container {
+    height: 100vh;
+    display: flex;
+    background-color: var(--dark-blue);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    word-break: break-word; 
+
+}
+
+.container h1 {
+    
+    font-size: 20px;
+    color: var(--white);
+}
+
+.container p {
+}

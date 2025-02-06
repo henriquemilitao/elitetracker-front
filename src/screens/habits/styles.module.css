@@ -1,0 +1,177 @@
+
+
+.container {
+  height: 100%;
+  background-color: var(--dark-blue);
+  min-height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 55% 1fr;
+}
+
+.content {
+  padding: 20px;
+  border-right: 1px solid var(--light);
+  min-height: calc(100vh - 40px); /* HACK */
+}
+
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  height: 36px;
+  padding: 0 10px;
+  margin-top: 40px;
+}
+
+.input input {
+  height: 36px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--white);
+  padding-right: 10px;
+
+}
+
+.input input::placeholder {
+  color: var(--light);
+}
+
+.input svg {
+  height: 24px;
+  width: 24px;
+  fill: var(--white);
+  cursor: pointer;
+  transition: fill 100ms;
+}
+
+.input svg:hover {
+  fill: var(--info)
+}
+
+.habits {
+  margin-top: 40px;
+}
+
+.habit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+  border-bottom: 1px solid var(--light);
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.habit p {
+  color: var(--white);
+  font-size: 16px;  
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  transition: background-color 100ms;
+
+}
+
+.habit:hover {
+  background-color: var(--dark-light-blue);
+}
+
+.habit-selected {
+  background-color: var(--dark-light-blue);
+}
+
+.habit div {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.habit div input {
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+  
+  
+  appearance: none; /* Remove o estilo padrão */
+  /* border: 2px solid #000; Borda preta */
+  border-radius: 50%; /* Torna o checkbox redondo */
+  outline: none;
+  background-color: var(--white); /* Fundo branco */
+  /* position: relative;  */
+  transition: all 0.2s ease; /* Animação suave */
+
+   display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.habit div input:checked {
+  background-color: var(--info); /* Fundo azul ao marcar */
+}
+
+.habit div input:checked::after {
+  content: "✔"; 
+  color: #fff; 
+  font-size: 11px;
+  font-weight: bold;
+  /* line-height: 1; */
+
+  /* position: absolute; */
+  /* top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold; */
+}
+
+.habit div input:hover {
+  background-color: var(--info-hover); /* Fundo azul ao marcar */
+
+}
+
+.habit div svg {
+  height: 20px;
+  width: 20px;
+  fill: var(--white);
+  cursor: pointer;
+  transition: fill 100ms;
+}
+
+.habit div svg:hover {
+  fill: var(--error)
+}
+
+.metrics {
+  padding: 20px;
+}
+
+.metrics h2 {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--white);
+  margin-top: 20px;
+
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 80px;
+  border-bottom: 1px solid var(--light);
+}
+
+.calendar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
