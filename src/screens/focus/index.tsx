@@ -1,5 +1,5 @@
-import { Indicator, MantineProvider } from '@mantine/core';
-import { Calendar, DatesProvider } from '@mantine/dates';
+import { Indicator } from '@mantine/core';
+import { Calendar } from '@mantine/dates';
 import { Clock, Minus, Plus } from '@phosphor-icons/react';
 import dayjs from 'dayjs';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -49,7 +49,7 @@ const TimerStateDescription = {
 };
 
 export function Focus() {
-  const weekDaysShort = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'];
+  // const weekDaysShort = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'];
   const [timers, setTimers] = useState<Timers>({ focus: 0, rest: 0 });
   const [timerState, setTimerState] = useState<TimerState>(TimerState.PAUSED);
   const inputFocus = useRef<HTMLInputElement>(null);
