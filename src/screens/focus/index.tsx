@@ -76,7 +76,7 @@ export function Focus() {
         return total + item.timeTo.diff(item.timeFrom, 'minutes');
       }, 0);
 
-      console.log({ timesMetrics });
+      // console.log({ timesMetrics });
       return { timesMetrics, totalDiff };
     }
   }, [focusTimes, timerState]);
@@ -322,7 +322,7 @@ export function Focus() {
         },
       });
 
-      console.log({ FOCUSTIMES: data });
+      // console.log({ FOCUSTIMES: data });
       setFocusTimes(data || []);
     } catch (error) {
       if (
@@ -345,7 +345,7 @@ export function Focus() {
   }, [currentDate]);
 
   function handleSelectDay(date: Date) {
-    console.log(dayjs(date).format('D [de] MMMM'));
+    // console.log(dayjs(date).format('D [de] MMMM'));
     setCurrentDate(dayjs(date));
   }
 
